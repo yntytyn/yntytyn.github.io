@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kartoshka</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+      .box-shadow {
+        box-shadow: 0 0 10px rgba(red, green, blue, alpha);
+      }
+    </style>
+    <style>
+      body {
+        background-color: rgb(190, 177, 189);
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-dark bg-dark">
+      <div class="container">
+        <a class="navbar-brand p-0" href="/"
+          ><img src="/logo.png" alt="logo" width="200"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="/index.html"
+                >Ну главная</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="/"
+                >Ебаать вторая вкладка охуеть</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="container my-5">
+      <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-5">
+        <div class="col">
+          <div class="card">
+            <img
+              src="/1.jpg "
+              class="card-img-top"
+              alt="Картинка не загрузилась лох"
+              width="69%"
+            />
+            <div class="card-body">
+              <h5 class="card-title">ЭТО антон кибербыдло</h5>
+              <p class="card-text">И он пошлёт сходить тебя нахуй</p>
+              <a
+                href="https://youtu.be/aP5HDUOayeY"
+                target="_blank"
+                class="btn btn-primary"
+                >сходить нахуй</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img
+              src="/1.jpg "
+              class="card-img-top"
+              alt="Картинка не загрузилась лох"
+              width="69%"
+            />
+            <div class="card-body">
+              <h5 class="card-title">это опять антон</h5>
+              <p class="card-text">
+                он попросит вас пройтись к матушке в канаву
+              </p>
+              <a href="#" onclick="order();" class="btn btn-primary"
+                >КАНАААВА</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="col" class="box-shadow">
+          <div class="card">
+            <img
+              src="/1.jpg "
+              class="card-img-top"
+              alt="Картинка не загрузилась лох"
+              width="69%"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Это кстати тоже антон</h5>
+              <p class="card-text">ну я думаю ты уже понял схему</p>
+              <a href="#" onclick="talk();" class="btn btn-primary"
+                >да, я иду нахуй</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script type="text/javascript">
+    function order() {
+      var audio = new Audio();
+      audio.src = "mat.mp3";
+      audio.autoplay = true;
+      alert("Внимание ваша вать утопает ");
+
+      return true;
+    }
+
+    function talk() {
+      const speech = prompt(
+        "И ты вот так просто возьмёш и пойдешь нахуй?",
+        "Да, я ж вообще-то терпила"
+      );
+      const a = `${speech}`;
+      const b = `Да, я ж вообще-то терпила`;
+      if (speech === null) {
+        alert("Ты хули отмена нажал");
+      } else if (a === b) {
+        alert("Ну ты бы написал бы хоть чото сам, а то хули тупа ОК нажимать");
+      } else {
+        alert(`"${speech}" - это бы кста твой ответ но мне на него пооебать`);
+      }
+    }
+  </script>
+</html>
